@@ -25,3 +25,7 @@ from source_data
 */
 
 -- where id is not null
+
+-- Melhores avaliações por preço e localização
+-- Media de tempo de hospedagem - preço
+-- Quais regiões tem mais procura 
