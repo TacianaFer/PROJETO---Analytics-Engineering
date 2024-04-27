@@ -1,0 +1,28 @@
+[0m21:28:20.162995 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000279F0A6DF40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000279F0A6D9A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000279F0A6E7E0>]}
+
+
+============================== 21:28:20.167672 | 379dcdf6-899d-4309-a8b9-be83f1ebf3ac ==============================
+[0m21:28:20.167672 [info ] [MainThread]: Running with dbt=1.7.13
+[0m21:28:20.169241 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\tacia\\.dbt', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt init', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m21:40:11.262064 [debug] [MainThread]: Starter project path: C:\Users\tacia\AppData\Local\Programs\Python\Python312\Lib\site-packages\dbt\include\starter_project
+[0m21:40:11.302113 [info ] [MainThread]: 
+Your new dbt project "projeto_analytics_eng" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m21:40:11.306032 [info ] [MainThread]: Setting up your profile.
+[0m21:44:45.570276 [info ] [MainThread]: Profile projeto_analytics_eng written to C:\Users\tacia\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m21:44:45.577311 [debug] [MainThread]: Command `dbt init` succeeded at 21:44:45.575292 after 985.59 seconds
+[0m21:44:45.579935 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000279F0A3A360>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000279F07E56A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000279F0B33F20>]}
+[0m21:44:45.583862 [debug] [MainThread]: Flushing usage events
