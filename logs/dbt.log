@@ -26,3 +26,29 @@ Happy modeling!
 [0m21:44:45.577311 [debug] [MainThread]: Command `dbt init` succeeded at 21:44:45.575292 after 985.59 seconds
 [0m21:44:45.579935 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000279F0A3A360>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000279F07E56A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000279F0B33F20>]}
 [0m21:44:45.583862 [debug] [MainThread]: Flushing usage events
+[0m00:33:50.078640 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa5a9974640>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa5a7c8fe20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa5a7c8ea70>]}
+
+
+============================== 00:33:50.081638 | 2fdd9631-12a1-4fda-9beb-2efa9d7e0275 ==============================
+[0m00:33:50.081638 [info ] [MainThread]: Running with dbt=1.7.13
+[0m00:33:50.082214 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': 'logs', 'fail_fast': 'False', 'profiles_dir': '/home/lrodix/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt deps', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m00:33:50.082895 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /home/lrodix/projects/santander_coders_23_2/modulo_5/PROJETO---Analytics-Engineering/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m00:33:50.084248 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_wall_clock_time": 0.042491134, "process_user_time": 1.731561, "process_kernel_time": 0.030027, "process_mem_max_rss": "89064", "process_out_blocks": "16", "command_success": false, "process_in_blocks": "0"}
+[0m00:33:50.084930 [debug] [MainThread]: Command `dbt deps` failed at 00:33:50.084768 after 0.04 seconds
+[0m00:33:50.085377 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa5a9974640>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa5a7c8d300>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa5a7c8dc00>]}
+[0m00:33:50.085819 [debug] [MainThread]: Flushing usage events
+[0m00:34:31.441696 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdaca79ec20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdac8ab3e80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdac8ab2aa0>]}
+
+
+============================== 00:34:31.444214 | aa8a6526-476a-496a-b5ed-f40545af7162 ==============================
+[0m00:34:31.444214 [info ] [MainThread]: Running with dbt=1.7.13
+[0m00:34:31.444759 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/lrodix/.dbt', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'logs', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt init', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m00:34:34.634616 [info ] [MainThread]: A project called projeto_analytics_eng already exists here.
+[0m00:34:34.636494 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 3.231168, "process_user_time": 1.703678, "process_kernel_time": 0.060129, "process_mem_max_rss": "89016", "process_out_blocks": "8", "process_in_blocks": "0"}
+[0m00:34:34.637505 [debug] [MainThread]: Command `dbt init` succeeded at 00:34:34.637253 after 3.23 seconds
+[0m00:34:34.638133 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdaca79ec20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdac8ab24a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdac8ab2d70>]}
+[0m00:34:34.638701 [debug] [MainThread]: Flushing usage events

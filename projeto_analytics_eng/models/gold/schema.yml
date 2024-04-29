@@ -1,0 +1,56 @@
+version: 2
+
+models:
+  - name: monthly_occupancy_rate
+    description: "Tabela com a taxa média de ocupação para um determinado mês"
+    columns:
+      - name: month
+        description: "Mês para o qual a taxa de ocupação é calculada"
+        tests:
+          - not_null
+          - dbt_expectations.expect_column_values_to_be_between:
+              min_value: 1
+              max_value: 12
+      - name: occupancy_rate
+        description: "Taxa média de ocupação para o mês"
+        tests:
+          - not_null
+          - dbt_expectations.expect_column_values_to_be_between:
+              min_value: 0
+              max_value: 100
+
+  - name: host_review_counts
+    description: "Número de avaliações positivas e negativas para cada anfitrião com base na pontuação média das avaliações"
+    columns:
+      - name: host_id
+        description: "Identificador único do anfitrião"
+        tests:
+          - not_null
+      - name: positive_reviews
+        description: "Número de avaliações positivas"
+        tests:
+          - not_null
+      - name: negative_reviews
+        description: "Número de avaliações negativas"
+        tests:
+          - not_null
+
+  - name: type_price_distribution
+    description: "Distribuição do preço por tipo de propriedade"
+    columns:
+      - name: property_type
+        description: "Tipo de propriedade"
+        tests:
+          - not_null
+      - name: average_price
+        description: "Preço médio por tipo de propriedade"
+        tests:
+          - not_null
+      - name: min_price
+        description: "Preço mínimo por tipo de propriedade"
+        tests:
+          - not_null
+      - name: max_price
+        description: "Preço máximo por tipo de propriedade"
+        tests:
+          - not_null

@@ -1,0 +1,15 @@
+version: 2
+
+sources:
+  - name: airbnb_data_bronze
+    description: 'Camada bronze dos dados de Airbnb'
+    database: postgres
+    schema: public
+    tables:
+      - name: calendar_bronze
+        description: 'Informações sobre as avaliações feitas por hóspedes que ficaram nas propriedades listadas. - Camada Bronze'
+      - name: reviews_bronze
+        description: 'Informações sobre a disponibilidade das propriedades ao longo do tempo. - Camada Bronze'
+      - name: listings_bronze
+        description: 'Informações detalhadas sobre as propriedades listadas no Airbnb. - Camada Bronze'
+
